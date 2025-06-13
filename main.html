@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+                integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+        <div class="glow" id="glow"></div>
+        <nav class="navbar">
+                <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#tech-playground">Playground</a></li>
+                        <li><a href="#about">About</a></li>
+                </ul>
+        </nav>
+        <div class="content">
+                <div class="hero-section" id="home">
+                        <div class="left-line">
+                                <div class="circle"></div>
+                                <div class="line"></div>
+                        </div>
+                        <div class="name">
+                                <h1>Hi, I'm Subash — a Full Stack Developer and B.Tech CSE (AI) student.</h1>
+                                <p>I enjoy building smart, functional web applications using HTML, CSS, JavaScript,
+                                        Flask, and
+                                        SQLAlchemy. I’m always eager to learn, explore new tech, and create innovative
+                                        solutions that make
+                                        an impact.</p>
+                        </div>
+                        <div class="photo">
+                                <img src="./assets/image-ghibili.png" class="image-prof">
+                        </div>
+                </div>
+                <div class="projects" id="projects">
+                        <h1>Projects</h1>
+                        <div class="project-cards">
+                                <div class="project-card" onclick="openModal(modaldata1)">
+                                        <img src="./assets/project-1.png" alt="" class="project-img">
+                                        <p class="title">Face Attendance Management System</p>
+                                        <div class="skills">
+                                                <i class="fab fa-html5"></i>
+                                                <i class="fab fa-css3-alt"></i>
+                                                <i class="fab fa-js"></i>
+                                                <i class="fa-solid fa-pepper-hot"></i> <i class="fab fa-python"></i>
+                                                <i class="fa-solid fa-camera"></i>
+                                                <i class="fas fa-database"></i>
+                                        </div>
+                                </div>
+                                <div class="project-card" onclick="openModal(modaldata2)">
+                                        <img src="./assets/project-2.png" alt="" class="project-img">
+                                        <p class="title">Automated Billing Management System</p>
+                                        <div class="skills">
+                                                <i class="fab fa-html5"></i>
+                                                <i class="fab fa-css3-alt"></i>
+                                                <i class="fab fa-js"></i>
+                                                <i class="fa-solid fa-pepper-hot"></i>
+                                                <i class="fab fa-python"></i>
+                                                <i class="fas fa-database"></i>
+                                        </div>
+                                </div>
+                                <div class="project-card" onclick="openModal(modaldata3)">
+                                        <img src="./assets/project-3.png" alt="" class="project-img">
+                                        <p class="title">Online Voting System using Flask</p>
+                                        <div class="skills">
+                                                <i class="fab fa-html5"></i>
+                                                <i class="fab fa-css3-alt"></i>
+                                                <i class="fab fa-js"></i>
+                                                <i class="fa-solid fa-pepper-hot"></i>
+                                                <i class="fab fa-python"></i>
+                                                <i class="fas fa-database"></i>
+                                        </div>
+                                </div>
+                                <div class="project-card" onclick="openModal(modaldata4)">
+                                        <img src="./assets/project-4.png" alt="" class="project-img">
+                                        <p class="title">Restaurent Website using HTML, CSS and JS</p>
+                                        <div class="skills">
+                                                <i class="fab fa-html5"></i>
+                                                <i class="fab fa-css3-alt"></i>
+                                                <i class="fab fa-js"></i>
+                                        </div>
+                                </div>
+                                <div class="project-card" onclick="openModal(modaldata5)">
+                                        <img src="./assets/project-5.png" alt="" class="project-img">
+                                        <p class="title">Prime Video Clone using HTML, CSS and JS</p>
+                                        <div class="skills">
+                                                <i class="fab fa-html5"></i>
+                                                <i class="fab fa-css3-alt"></i>
+                                                <i class="fab fa-js"></i>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <div class="tech-playground" id="tech-playground">
+                        <h1>Tech Playground</h1>
+                        <a>
+                                <div class="game-cards" onclick="openCameraModal()">
+                                        <div class="game-card">
+                                                <i class="fa-solid fa-camera"></i>
+                                                <h2>Camera Magic</h2>
+                                                <p>A basic implementation of hand tracking using js</p>
+                                        </div>
+                                </div>
+                        </a>
+                </div>
+                <div class="about" id="about">
+                        <h1>About Me</h1>
+                        <div class="secti">
+                                <div class="about-left">
+                                        <p class="about-description">
+                                                I'm a passionate Computer Science student at Amrita Vishwa Vidyapeetham,
+                                                currently specializing in Artificial Intelligence and Full Stack
+                                                Development. I enjoy building scalable web apps and exploring real-world
+                                                applications of AI/ML. I’m always eager to learn and work on exciting
+                                                projects.
+                                        </p>
+                                        <h2>Education</h2>
+                                        <div class="education">
+                                                <img src="./assets/amrita.png" alt="">
+                                                <hr>
+                                                <p class="education-desc">B.Tech - CSE (AI) <b>Batch:</b> 2024-2028</p>
+                                        </div>
+                                </div>
+                                <div class="about-right">
+                                        <div class="about-tech">
+                                                <h1>Tools & Technologies I know</h1>
+                                                <div>
+                                                        <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank"><img src="./assets/c.png" alt="C Language"></a>
+                                                        <a href="https://www.java.com/" target="_blank"><img src="./assets/java.png" alt="Java"></a>
+                                                        <a href="https://www.python.org/" target="_blank"><img src="./assets/python.png" alt="Python"></a>
+                                                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><img src="./assets/html.png" alt="HTML"></a>
+                                                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img src="./assets/css.png" alt="CSS"></a>
+                                                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="./assets/js.png" alt="JavaScript"></a>
+                                                        <a href="https://flask.palletsprojects.com/" target="_blank"><img src="./assets/flask.png" class="flask" alt="Flask"></a>
+                                                        <a href="https://www.mysql.com/" target="_blank"><img src="./assets/mysql.png" alt="MySQL"></a>
+                                                        <a href="https://react.dev/" target="_blank"><img src="./assets/react.png" alt="React"></a>
+                                                        <a href="https://nodejs.org/" target="_blank"><img src="./assets/node.png" alt="Node.js"></a>
+                                                        <a href="https://expressjs.com/" target="_blank"><img src="./assets/express.png" alt="Express.js"></a>
+                                                        <a href="https://www.mongodb.com/" target="_blank"><img src="./assets/mongodb.png" alt="MongoDB"></a>
+                                                        <a href="https://www.microsoft.com/en-us/microsoft-365/excel" target="_blank"><img src="./assets/excel.png" alt="Excel"></a>
+                                                        <a href="https://www.mathworks.com/products/matlab.html" target="_blank"><img src="./assets/matlab.png" alt="MATLAB"></a>
+                                                        <a href="https://code.visualstudio.com/" target="_blank"><img src="./assets/vscode.png" alt="VS Code"></a>
+                                                        <a href="https://www.postman.com/" target="_blank"><img src="./assets/postman.png" alt="Postman"></a>
+                                                        <a href="https://git-scm.com/" target="_blank"><img src="./assets/git.png" alt="Git"></a>
+                                                </div>
+                                        </div>
+                                        <div class="about-contact">
+                                                <h1>Contact Me!</h1>
+                                                <div>
+                                                        <a href="https://github.com/Next-Gen-Coder-2007" target="_blank"><img src="./assets/github.png" alt=""></a>
+                                                        <a href="https://www.linkedin.com/in/subash-baskaran/" target="_blank"><img src="./assets/linkedin.png" alt=""></a>
+                                                        <a href="https://www.instagram.com/subash_8776/" target="_blank"><img src="./assets/instagram.png" style="scale: 1.2;" alt=""></a>
+                                                        <a href="https://x.com/subash59245" target="_blank"><img src="./assets/twitter.png" style="scale: 1.3;" alt=""></a>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <footer class="footer">
+                        <div class="footer-content">
+                                <p>&copy; 2025 Subash B. All rights reserved.</p>
+                        </div>
+                </footer>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+                <div class="modal" onclick="event.stopPropagation()">
+                        <div class="modal-header">
+                                <h2 class="modal-title">Project Details</h2>
+                                <button class="close-btn" onclick="closeModal()">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                                <img src="" alt="" class="project-image">
+                                <h1 class="project-title"></h1>
+                                <p class="description"></p>
+                                <a href="" class="web-link" target="_blank"><i class="fa-solid fa-link"></i></a>
+                                <a href="" class="github-link" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                <p class="stack-title">Stacks Used</p>
+                                <ul class="skills-list">
+                                </ul>
+                        </div>
+                </div>
+        </div>
+
+        <!-- Camera Modal -->
+        <div class="modal-overlay-camera" id="modalOverlayCamera" onclick="closeCameraModal(event)">
+                <div class="modalCamera" onclick="event.stopPropagation()">
+                        <div class="modal-header">
+                                <h2 class="modal-title">Project Details</h2>
+                                <button class="close-btn" onclick="closeCameraModal()">&times;</button>
+                        </div>
+                        <div class="modal-body-camera">
+                                <div class="cont-1">
+                                        <canvas id="canvas" width="640" height="480"></canvas>
+                                        <video id="video" autoplay playsinline width="640" height="480"></video>
+
+                                        <div id="controls">
+                                                <select id="deviceSelect"></select>
+                                                <button id="toggleCamera" class="off">Start</button>
+                                        </div>
+                                </div>
+                                <hr>
+                                <div class="cont-2">
+                                        <div class="mac-window">
+                                                <div class="mac-header">
+                                                        <div class="mac-buttons">
+                                                                <span class="red"></span>
+                                                                <span class="yellow"></span>
+                                                                <span class="green"></span>
+                                                        </div>
+                                                </div>
+
+                                                <div class="tab-bar">
+                                                        <button class="tab-button active" data-tab="html">HTML</button>
+                                                        <button class="tab-button" data-tab="css">CSS</button>
+                                                        <button class="tab-button" data-tab="js">JS</button>
+                                                </div>
+
+                                                <div class="code-editor">
+                                                        <div id="html" class="code-block">
+                                                                <div class="code-line"><span class="tag">&lt;!DOCTYPE
+                                                                                html&gt;</span></div>
+                                                                <div class="code-line"><span
+                                                                                class="tag">&lt;html&gt;</span></div>
+                                                                <div class="code-line"><span
+                                                                                class="tag">&lt;head&gt;</span></div>
+                                                                <div class="code-line indent"><span class="tag">&lt;link
+                                                                                <span class="attr">rel=</span><span
+                                                                                        class="value">"stylesheet"</span>
+                                                                                <span class="attr">href=</span><span
+                                                                                        class="value">"./style.css"</span>
+                                                                                &gt;</span></div>
+                                                                <div class="code-line"><span
+                                                                                class="tag">&lt;/head&gt;</span></div>
+                                                                <div class="code-line"><span class="comment">&lt;!--
+                                                                                Canvas and Controls --&gt;</span>
+                                                                </div>
+                                                                <div class="code-line"><span
+                                                                                class="tag">&lt;body&gt;</span></div>
+                                                                <div class="code-line indent">
+                                                                        <span class="tag">&lt;canvas</span> <span
+                                                                                class="attr">id=</span><span
+                                                                                class="value">"canvas"</span>
+                                                                        <span class="attr">width=</span><span
+                                                                                class="value">"640"</span>
+                                                                        <span class="attr">height=</span><span
+                                                                                class="value">"480"</span>
+                                                                        <span class="tag">&gt;&lt;/canvas&gt;</span>
+                                                                </div>
+                                                                <div class="code-line indent">
+                                                                        <span class="tag">&lt;video</span> <span
+                                                                                class="attr">id=</span><span
+                                                                                class="value">"video"</span>
+                                                                        <span class="attr">autoplay</span> <span
+                                                                                class="attr">playsinline</span>
+                                                                        <span class="attr">width=</span><span
+                                                                                class="value">"640"</span>
+                                                                        <span class="attr">height=</span><span
+                                                                                class="value">"480"</span>
+                                                                        <span class="tag">&gt;&lt;/video&gt;</span>
+                                                                </div>
+                                                                <div class="code-line indent"><span
+                                                                                class="tag">&lt;div</span> <span
+                                                                                class="attr">id=</span><span
+                                                                                class="value">"controls"</span><span
+                                                                                class="tag">&gt;</span></div>
+                                                                <div class="code-line indent-2"><span
+                                                                                class="tag">&lt;select</span> <span
+                                                                                class="attr">id=</span><span
+                                                                                class="value">"deviceSelect"</span><span
+                                                                                class="tag">&gt;&lt;/select&gt;</span>
+                                                                </div>
+                                                                <div class="code-line indent-2"><span
+                                                                                class="tag">&lt;button</span> <span
+                                                                                class="attr">id=</span><span
+                                                                                class="value">"toggleCamera"</span>
+                                                                        <span class="attr">class=</span><span
+                                                                                class="value">"off"</span><span
+                                                                                class="tag">&gt;</span>Start<span
+                                                                                class="tag">&lt;/button&gt;</span>
+                                                                </div>
+                                                                <div class="code-line indent"><span
+                                                                                class="tag">&lt;/div&gt;</span></div>
+                                                                <div class="code-line"><span
+                                                                                class="tag">&lt;/body&gt;</span></div>
+                                                        </div>
+
+                                                        <div id="css" class="code-block hidden">
+                                                                <div class="code-line"><span
+                                                                                class="tag">#container</span> {</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">position</span>: <span
+                                                                                class="value">relative</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">text-align</span>: <span
+                                                                                class="value">center</span>;</div>
+                                                                <div class="code-line"><span class="tag">}</span></div>
+                                                                <div class="code-line"><span class="tag">canvas</span> {
+                                                                </div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">border-radius</span>: <span
+                                                                                class="value">12px</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">box-shadow</span>: <span
+                                                                                class="value">0 0 20px rgba(0, 0, 0,
+                                                                                0.5)</span>;</div>
+                                                                <div class="code-line"><span class="tag">}</span></div>
+                                                                <div class="code-line"><span class="tag">video</span> {
+                                                                </div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">display</span>: <span
+                                                                                class="value">none</span>;</div>
+                                                                <div class="code-line"><span class="tag">}</span></div>
+                                                                <div class="code-line"><span
+                                                                                class="tag">#controls</span> {</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">margin-top</span>: <span
+                                                                                class="value">20px</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">position</span>: <span
+                                                                                class="value">relative</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">z-index</span>: <span
+                                                                                class="value">10</span>;</div>
+                                                                <div class="code-line"><span class="tag">}</span></div>
+                                                                <div class="code-line"><span class="tag">button</span> {
+                                                                </div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">padding</span>: <span
+                                                                                class="value">10px 20px</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">border</span>: <span
+                                                                                class="value">none</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">border-radius</span>: <span
+                                                                                class="value">4px</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">font-size</span>: <span
+                                                                                class="value">16px</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">cursor</span>: <span
+                                                                                class="value">pointer</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">margin</span>: <span
+                                                                                class="value">10px</span>;</div>
+                                                                <div class="code-line"><span class="tag">}</span></div>
+                                                                <div class="code-line"><span
+                                                                                class="tag">#toggleCamera</span> {</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">background</span>: <span
+                                                                                class="value">#4CAF50</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">color</span>: <span
+                                                                                class="value">white</span>;</div>
+                                                                <div class="code-line"><span class="tag">}</span></div>
+                                                                <div class="code-line"><span
+                                                                                class="tag">#toggleCamera.off</span> {
+                                                                </div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">background</span>: <span
+                                                                                class="value">#f44336</span>;</div>
+                                                                <div class="code-line"><span class="tag">}</span></div>
+                                                                <div class="code-line"><span class="tag">.cont-1
+                                                                                select</span> {</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">padding</span>: <span
+                                                                                class="value">8px</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">border-radius</span>: <span
+                                                                                class="value">4px</span>;</div>
+                                                                <div class="code-line"><span class="tag">}</span></div>
+                                                                <div class="code-line"><span
+                                                                                class="tag">.mac-window</span> {</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">background-color</span>:
+                                                                        <span class="value">#2e2e2e</span>;
+                                                                </div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">max-width</span>: <span
+                                                                                class="value">800px</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">border-radius</span>: <span
+                                                                                class="value">12px</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">box-shadow</span>: <span
+                                                                                class="value">0 0 30px rgba(0, 0, 0,
+                                                                                0.6)</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">overflow</span>: <span
+                                                                                class="value">hidden</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">display</span>: <span
+                                                                                class="value">flex</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">flex-direction</span>:
+                                                                        <span class="value">column</span>;
+                                                                </div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">margin</span>: <span
+                                                                                class="value">40px</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">margin-top</span>: <span
+                                                                                class="value">10px</span>;</div>
+                                                                <div class="code-line"><span class="tag">}</span></div>
+                                                                <div class="code-line"><span
+                                                                                class="tag">.mac-header</span> {</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">height</span>: <span
+                                                                                class="value">35px</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">background-color</span>:
+                                                                        <span class="value">#3b3b3b</span>;
+                                                                </div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">display</span>: <span
+                                                                                class="value">flex</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">align-items</span>: <span
+                                                                                class="value">center</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">padding</span>: <span
+                                                                                class="value">0
+                                                                                10px</span>;</div>
+                                                                <div class="code-line"><span class="tag">}</span></div>
+                                                                <div class="code-line"><span
+                                                                                class="tag">.mac-buttons</span> {</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">display</span>: <span
+                                                                                class="value">flex</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">gap</span>: <span
+                                                                                class="value">8px</span>;</div>
+                                                                <div class="code-line"><span class="tag">}</span></div>
+                                                                <div class="code-line"><span class="tag">.mac-buttons
+                                                                                span</span> {</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">width</span>: <span
+                                                                                class="value">12px</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">height</span>: <span
+                                                                                class="value">12px</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">border-radius</span>: <span
+                                                                                class="value">50%</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">display</span>: <span
+                                                                                class="value">inline-block</span>;</div>
+                                                                <div class="code-line"><span class="tag">}</span></div>
+                                                                <div class="code-line"><span class="tag">.red</span> {
+                                                                </div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">background-color</span>:
+                                                                        <span class="value">#ff5f56</span>;
+                                                                </div>
+                                                                <div class="code-line"><span class="tag">}</span></div>
+                                                                <div class="code-line"><span class="tag">.yellow</span>
+                                                                        {</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">background-color</span>:
+                                                                        <span class="value">#ffbd2e</span>;
+                                                                </div>
+                                                                <div class="code-line"><span class="tag">}</span></div>
+                                                                <div class="code-line"><span class="tag">.green</span> {
+                                                                </div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">background-color</span>:
+                                                                        <span class="value">#27c93f</span>;
+                                                                </div>
+                                                                <div class="code-line"><span class="tag">}</span></div>
+                                                                <div class="code-line"><span class="tag">.tab-bar</span>
+                                                                        {</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">display</span>: <span
+                                                                                class="value">flex</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">background</span>: <span
+                                                                                class="value">#1f1f1f</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">border-bottom</span>: <span
+                                                                                class="value">1px solid #444</span>;
+                                                                </div>
+                                                                <div class="code-line"><span class="tag">}</span></div>
+                                                                <div class="code-line"><span class="tag">.tab-bar
+                                                                                button</span> {</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">flex</span>: <span
+                                                                                class="value">1</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">padding</span>: <span
+                                                                                class="value">12px</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">background</span>: <span
+                                                                                class="value">none</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">border</span>: <span
+                                                                                class="value">none</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">color</span>: <span
+                                                                                class="value">#ccc</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">font-weight</span>: <span
+                                                                                class="value">bold</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">cursor</span>: <span
+                                                                                class="value">pointer</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">transition</span>: <span
+                                                                                class="value">0.3s</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">border-bottom</span>: <span
+                                                                                class="value">3px solid
+                                                                                transparent</span>;</div>
+                                                                <div class="code-line"><span class="tag">}</span></div>
+                                                                <div class="code-line"><span class="tag">.tab-bar
+                                                                                button.active</span> {</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">border-bottom</span>: <span
+                                                                                class="value">3px solid #4caf50</span>;
+                                                                </div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">background-color</span>:
+                                                                        <span class="value">#2f2f2f</span>;
+                                                                </div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">color</span>: <span
+                                                                                class="value">#fff</span>;</div>
+                                                                <div class="code-line"><span class="tag">}</span></div>
+                                                                <div class="code-line"><span
+                                                                                class="tag">.code-editor</span> {</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">padding</span>: <span
+                                                                                class="value">20px</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">color</span>: <span
+                                                                                class="value">#d4d4d4</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">font-size</span>: <span
+                                                                                class="value">14px</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">overflow-y</span>: <span
+                                                                                class="value">auto</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">height</span>: <span
+                                                                                class="value">400px</span>;</div>
+                                                                <div class="code-line"><span class="tag">}</span></div>
+                                                                <div class="code-line"><span class="tag">.hidden</span>
+                                                                        {</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">display</span>: <span
+                                                                                class="value">none</span>;</div>
+                                                                <div class="code-line"><span class="tag">}</span></div>
+                                                                <div class="code-line"><span
+                                                                                class="tag">.code-line</span> {</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">display</span>: <span
+                                                                                class="value">flex</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">flex-wrap</span>: <span
+                                                                                class="value">wrap</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">gap</span>: <span
+                                                                                class="value">4px</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">margin-bottom</span>: <span
+                                                                                class="value">4px</span>;</div>
+                                                                <div class="code-line"><span class="tag">}</span></div>
+                                                                <div class="code-line"><span class="tag">.indent</span>
+                                                                        {</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">padding-left</span>: <span
+                                                                                class="value">20px</span>;</div>
+                                                                <div class="code-line"><span class="tag">}</span></div>
+                                                                <div class="code-line"><span
+                                                                                class="tag">.indent-2</span> {</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">padding-left</span>: <span
+                                                                                class="value">40px</span>;</div>
+                                                                <div class="code-line"><span class="tag">}</span></div>
+                                                                <div class="code-line"><span class="tag">.tag</span> {
+                                                                </div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">color</span>: <span
+                                                                                class="value">#569cd6</span>;</div>
+                                                                <div class="code-line"><span class="tag">}</span></div>
+                                                                <div class="code-line"><span class="tag">.attr</span> {
+                                                                </div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">color</span>: <span
+                                                                                class="value">#9cdcfe</span>;</div>
+                                                                <div class="code-line"><span class="tag">}</span></div>
+                                                                <div class="code-line"><span class="tag">.value</span> {
+                                                                </div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">color</span>: <span
+                                                                                class="value">#ce9178</span>;</div>
+                                                                <div class="code-line"><span class="tag">}</span></div>
+                                                                <div class="code-line"><span class="tag">.comment</span>
+                                                                        {</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">color</span>: <span
+                                                                                class="value">#6a9955</span>;</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">font-style</span>: <span
+                                                                                class="value">italic</span>;</div>
+                                                                <div class="code-line"><span class="tag">}</span></div>
+                                                                <div class="code-line"><span class="tag">.keyword</span>
+                                                                        {</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">color</span>: <span
+                                                                                class="value">#c586c0</span>;</div>
+                                                                <div class="code-line"><span class="tag">}</span></div>
+                                                                <div class="code-line"><span
+                                                                                class="tag">.function</span> {</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="attr">color</span>: <span
+                                                                                class="value">#dcdcaa</span>;</div>
+                                                                <div class="code-line"><span class="tag">}</span></div>
+                                                        </div>
+
+                                                        <div id="js" class="code-block hidden">
+                                                                <div class="code-line"><span class="comment">// Camera
+                                                                                setup and toggle logic</span>
+                                                                </div>
+                                                                <div class="code-line"><span
+                                                                                class="keyword">const</span> video =
+                                                                        document.getElementById(<span
+                                                                                class="value">'video'</span>);</div>
+                                                                <div class="code-line"><span
+                                                                                class="keyword">const</span> canvas =
+                                                                        document.getElementById(<span
+                                                                                class="value">'canvas'</span>);</div>
+                                                                <div class="code-line"><span
+                                                                                class="keyword">const</span> ctx =
+                                                                        canvas.getContext(<span
+                                                                                class="value">'2d'</span>);</div>
+                                                                <div class="code-line"><span
+                                                                                class="keyword">const</span>
+                                                                        toggleButton =
+                                                                        document.getElementById(<span
+                                                                                class="value">'toggleCamera'</span>);
+                                                                </div>
+                                                                <div class="code-line"><span
+                                                                                class="keyword">const</span>
+                                                                        deviceSelect =
+                                                                        document.getElementById(<span
+                                                                                class="value">'deviceSelect'</span>);
+                                                                </div>
+                                                                <div class="code-line"><span class="keyword">let</span>
+                                                                        stream = <span class="keyword">null</span>;
+                                                                </div>
+                                                                <div class="code-line"><span class="keyword">let</span>
+                                                                        cameraOn = <span class="keyword">false</span>;
+                                                                </div>
+                                                                <div class="code-line"><span class="keyword">let</span>
+                                                                        model = <span class="keyword">null</span>;</div>
+                                                                <div class="code-line"><span
+                                                                                class="keyword">const</span> fingers = {
+                                                                </div>
+                                                                <div class="code-line indent">thumb: [0, 1, 2, 3, 4],
+                                                                </div>
+                                                                <div class="code-line indent">indexFinger: [0, 5, 6, 7,
+                                                                        8],</div>
+                                                                <div class="code-line indent">middleFinger: [0, 9, 10,
+                                                                        11, 12],</div>
+                                                                <div class="code-line indent">ringFinger: [0, 13, 14,
+                                                                        15, 16],</div>
+                                                                <div class="code-line indent">pinky: [0, 17, 18, 19, 20]
+                                                                </div>
+                                                                <div class="code-line">};</div>
+                                                                <div class="code-line"><span class="keyword">async
+                                                                                function</span> <span
+                                                                                class="function">getVideoDevices</span>()
+                                                                        {</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="keyword">try</span> {</div>
+                                                                <div class="code-line indent-2"><span
+                                                                                class="keyword">const</span> devices =
+                                                                        <span class="keyword">await</span>
+                                                                        navigator.mediaDevices.enumerateDevices();
+                                                                </div>
+                                                                <div class="code-line indent-2"><span
+                                                                                class="keyword">const</span>
+                                                                        videoDevices =
+                                                                        devices.filter(device => device.kind === <span
+                                                                                class="value">'videoinput'</span>);
+                                                                </div>
+                                                                <div class="code-line indent-2">deviceSelect.innerHTML =
+                                                                        <span class="value">''</span>;
+                                                                </div>
+                                                                <div class="code-line indent-2">
+                                                                        videoDevices.forEach((device, i) => {</div>
+                                                                <div class="code-line indent-3"><span
+                                                                                class="keyword">const</span> option =
+                                                                        document.createElement(<span
+                                                                                class="value">'option'</span>);</div>
+                                                                <div class="code-line indent-3">option.value =
+                                                                        device.deviceId;</div>
+                                                                <div class="code-line indent-3">option.text =
+                                                                        device.label || <span class="value">`Camera ${i
+                                                                                +
+                                                                                1}`</span>;</div>
+                                                                <div class="code-line indent-3">
+                                                                        deviceSelect.appendChild(option);</div>
+                                                                <div class="code-line indent-2">});</div>
+                                                                <div class="code-line indent">} <span
+                                                                                class="keyword">catch</span> (error) {
+                                                                </div>
+                                                                <div class="code-line indent-2">console.error(<span
+                                                                                class="value">'Error accessing video
+                                                                                devices:'</span>, error);</div>
+                                                                <div class="code-line indent">}</div>
+                                                                <div class="code-line">}</div>
+                                                                <div class="code-line"><span class="keyword">async
+                                                                                function</span> <span
+                                                                                class="function">setupCamera</span>(deviceId
+                                                                        = <span class="keyword">null</span>) {</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="keyword">try</span> {</div>
+                                                                <div class="code-line indent-2"><span
+                                                                                class="keyword">const</span> constraints
+                                                                        = {</div>
+                                                                <div class="code-line indent-2">video: deviceId ? {
+                                                                        deviceId: { exact: deviceId } } : {
+                                                                        facingMode: <span class="value">'user'</span> }
+                                                                </div>
+                                                                <div class="code-line indent-2">};</div>
+                                                                <div class="code-line indent-2">stream = <span
+                                                                                class="keyword">await</span>
+                                                                        navigator.mediaDevices.getUserMedia(constraints);
+                                                                </div>
+                                                                <div class="code-line indent-2">video.srcObject =
+                                                                        stream;</div>
+                                                                <div class="code-line indent-2"><span
+                                                                                class="keyword">return new</span>
+                                                                        Promise(resolve => {
+                                                                </div>
+                                                                <div class="code-line indent-3">video.onloadedmetadata =
+                                                                        () => resolve(video);</div>
+                                                                <div class="code-line indent-2">});</div>
+                                                                <div class="code-line indent">} <span
+                                                                                class="keyword">catch</span> (error) {
+                                                                </div>
+                                                                <div class="code-line indent-2">console.error(<span
+                                                                                class="value">'Error setting up
+                                                                                camera:'</span>, error);</div>
+                                                                <div class="code-line indent">}</div>
+                                                                <div class="code-line">}</div>
+                                                                <div class="code-line"><span
+                                                                                class="keyword">function</span> <span
+                                                                                class="function">stopCamera</span>() {
+                                                                </div>
+                                                                <div class="code-line indent"><span
+                                                                                class="keyword">if</span> (stream) {
+                                                                </div>
+                                                                <div class="code-line indent-2">
+                                                                        stream.getTracks().forEach(track =>
+                                                                        track.stop());</div>
+                                                                <div class="code-line indent-2">video.srcObject = <span
+                                                                                class="keyword">null</span>;</div>
+                                                                <div class="code-line indent">}</div>
+                                                                <div class="code-line">}</div>
+                                                                <div class="code-line"><span
+                                                                                class="keyword">function</span> <span
+                                                                                class="function">drawLine</span>(ctx,
+                                                                        points) {</div>
+                                                                <div class="code-line indent">ctx.beginPath();</div>
+                                                                <div class="code-line indent"><span
+                                                                                class="keyword">for</span> (<span
+                                                                                class="keyword">let</span> i = 0; i <
+                                                                                points.length - 1; i++) {</div>
+                                                                                <div class="code-line indent-2"><span
+                                                                                                class="keyword">const</span>
+                                                                                        [x1, y1] = points[i];
+                                                                                </div>
+                                                                                <div class="code-line indent-2"><span
+                                                                                                class="keyword">const</span>
+                                                                                        [x2, y2] = points[i +
+                                                                                        1];</div>
+                                                                                <div class="code-line indent-2">
+                                                                                        ctx.moveTo(x1, y1);</div>
+                                                                                <div class="code-line indent-2">
+                                                                                        ctx.lineTo(x2, y2);</div>
+                                                                                <div class="code-line indent">}</div>
+                                                                                <div class="code-line indent">
+                                                                                        ctx.strokeStyle = <span
+                                                                                                class="value">'white'</span>;
+                                                                                </div>
+                                                                                <div class="code-line indent">
+                                                                                        ctx.lineWidth = 2;</div>
+                                                                                <div class="code-line indent">
+                                                                                        ctx.stroke();</div>
+                                                                                <div class="code-line">}</div>
+                                                                                <div class="code-line"><span
+                                                                                                class="keyword">async
+                                                                                                function</span> <span
+                                                                                                class="function">detectHands</span>()
+                                                                                        {</div>
+                                                                                <div class="code-line indent"><span
+                                                                                                class="keyword">if</span>
+                                                                                        (cameraOn && model) {
+                                                                                </div>
+                                                                                <div class="code-line indent-2">
+                                                                                        ctx.clearRect(0, 0,
+                                                                                        canvas.width, canvas.height);
+                                                                                </div>
+                                                                                <div class="code-line indent-2">
+                                                                                        ctx.drawImage(video, 0, 0,
+                                                                                        canvas.width, canvas.height);
+                                                                                </div>
+                                                                                <div class="code-line indent-2"><span
+                                                                                                class="keyword">const</span>
+                                                                                        predictions = <span
+                                                                                                class="keyword">await</span>
+                                                                                        model.estimateHands(video);
+                                                                                </div>
+                                                                                <div class="code-line indent-2">
+                                                                                        predictions.forEach(prediction
+                                                                                        => {</div>
+                                                                                <div class="code-line indent-3"><span
+                                                                                                class="keyword">const</span>
+                                                                                        landmarks =
+                                                                                        prediction.landmarks;</div>
+                                                                                <div class="code-line indent-3"><span
+                                                                                                class="keyword">for</span>
+                                                                                        (<span
+                                                                                                class="keyword">let</span>
+                                                                                        finger <span
+                                                                                                class="keyword">in</span>
+                                                                                        fingers) {</div>
+                                                                                <div class="code-line indent-4"><span
+                                                                                                class="keyword">const</span>
+                                                                                        points =
+                                                                                        fingers[finger].map(i =>
+                                                                                        landmarks[i]);</div>
+                                                                                <div class="code-line indent-4">
+                                                                                        drawLine(ctx, points);</div>
+                                                                                <div class="code-line indent-3">}</div>
+                                                                                <div class="code-line indent-3">
+                                                                                        landmarks.forEach(([x, y]) => {
+                                                                                </div>
+                                                                                <div class="code-line indent-3">
+                                                                                        ctx.beginPath();</div>
+                                                                                <div class="code-line indent-3">
+                                                                                        ctx.arc(x, y, 5, 0, 2 *
+                                                                                        Math.PI);</div>
+                                                                                <div class="code-line indent-3">
+                                                                                        ctx.fillStyle = <span
+                                                                                                class="value">'lime'</span>;
+                                                                                </div>
+                                                                                <div class="code-line indent-3">
+                                                                                        ctx.fill();</div>
+                                                                                <div class="code-line indent-2">});
+                                                                                </div>
+                                                                                <div class="code-line indent">});</div>
+                                                                                <div class="code-line">}</div>
+                                                                                <div class="code-line">
+                                                                                        requestAnimationFrame(detectHands);
+                                                                                </div>
+                                                                                <div class="code-line">}</div>
+                                                                                <div class="code-line">
+                                                                                        toggleButton.addEventListener(<span
+                                                                                                class="value">'click'</span>,
+                                                                                        <span
+                                                                                                class="keyword">async</span>
+                                                                                        () => {
+                                                                                </div>
+                                                                                <div class="code-line indent"><span
+                                                                                                class="keyword">if</span>
+                                                                                        (cameraOn) {</div>
+                                                                                <div class="code-line indent-2">
+                                                                                        stopCamera();</div>
+                                                                                <div class="code-line indent-2">cameraOn
+                                                                                        = <span
+                                                                                                class="keyword">false</span>;
+                                                                                </div>
+                                                                                <div class="code-line indent-2">
+                                                                                        toggleButton.textContent = <span
+                                                                                                class="value">'Start
+                                                                                                Camera'</span>;</div>
+                                                                                <div class="code-line indent-2">
+                                                                                        ctx.clearRect(0, 0,
+                                                                                        canvas.width, canvas.height);
+                                                                                </div>
+                                                                                <div class="code-line indent">} <span
+                                                                                                class="keyword">else</span>
+                                                                                        {</div>
+                                                                                <div class="code-line indent-2"><span
+                                                                                                class="keyword">const</span>
+                                                                                        selectedDeviceId =
+                                                                                        deviceSelect.value;</div>
+                                                                                <div class="code-line indent-2"><span
+                                                                                                class="keyword">await</span>
+                                                                                        setupCamera(selectedDeviceId);
+                                                                                </div>
+                                                                                <div class="code-line indent-2">
+                                                                                        video.play();</div>
+                                                                                <div class="code-line indent-2">cameraOn
+                                                                                        = <span
+                                                                                                class="keyword">true</span>;
+                                                                                </div>
+                                                                                <div class="code-line indent-2">
+                                                                                        toggleButton.textContent = <span
+                                                                                                class="value">'Stop
+                                                                                                Camera'</span>;</div>
+                                                                                <div class="code-line indent">}</div>
+                                                                                <div class="code-line">});</div>
+                                                                                <div class="code-line"><span
+                                                                                                class="keyword">async
+                                                                                                function</span> <span
+                                                                                                class="function">main</span>()
+                                                                                        {</div>
+                                                                                <div class="code-line indent"><span
+                                                                                                class="keyword">try</span>
+                                                                                        {</div>
+                                                                                <div class="code-line indent-2"><span
+                                                                                                class="keyword">await</span>
+                                                                                        tf.setBackend(<span
+                                                                                                class="value">'webgl'</span>);
+                                                                                </div>
+                                                                                <div class="code-line indent-2"><span
+                                                                                                class="keyword">await</span>
+                                                                                        getVideoDevices();
+                                                                                </div>
+                                                                                <div class="code-line indent-2">model =
+                                                                                        <span
+                                                                                                class="keyword">await</span>
+                                                                                        handpose.load();
+                                                                                </div>
+                                                                                <div class="code-line indent-2">
+                                                                                        detectHands();</div>
+                                                                                <div class="code-line indent">} <span
+                                                                                                class="keyword">catch</span>
+                                                                                        (error) {</div>
+                                                                                <div class="code-line indent-2">
+                                                                                        console.error(<span
+                                                                                                class="value">'Error in
+                                                                                                main
+                                                                                                function:'</span>,
+                                                                                        error);</div>
+                                                                                <div class="code-line indent">}</div>
+                                                                                <div class="code-line">}</div>
+                                                                                <div class="code-line">main();</div>
+                                                                </div>
+
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/handpose"></script>
+        <script src="./script.js"></script>
+</body>
+
+</html>
