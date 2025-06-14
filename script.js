@@ -240,3 +240,21 @@ tabButtons.forEach(button => {
         document.getElementById(button.dataset.tab).classList.remove('hidden');
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('.hero-section, .projects, .tech-playground, .about, .footer');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate-slide-up');
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
