@@ -4,22 +4,6 @@ document.addEventListener("mousemove", (e) => {
     glow.style.top = `${e.clientY}px`;
 });
 
-
-const photo = document.querySelector('.photo');
-const topImage = document.querySelector('.image-top');
-
-photo.addEventListener('mousemove', function (e) {
-    const rect = photo.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-
-    topImage.style.clipPath = `circle(50px at ${x}px ${y}px)`;
-});
-
-photo.addEventListener('mouseleave', function () {
-    topImage.style.clipPath = 'circle(0 at 50% 50%)';
-});
-
 const modaldata1 = { img: "./assets/project-1.png", title: "Face Attendance Management System", description: "Developed a smart student attendance system that leverages face recognition technology to automate and authenticate the attendance-taking process. Built using Flask for the backend, with face_recognition library for image processing and identity verification.", time: "", github: "https://github.com/Next-Gen-Coder-2007/Attendance-System-using-face_recognition", deployed_link: "https://attendance-system-using-facerecognition-production.up.railway.app/", skills: ["HTML", "CSS", "JS", "FLASK", "OpenCV", "Face_Recognition_Models", "Jinja2 Templating", "SQLALCHEMY"] }
 const modaldata2 = { img: "./assets/project-2.png", title: "Automated Billing Management System", description: "The Automated Billing Management System is a web-based application designed to streamline and automate the entire billing process for businesses. Built using Flask as the backend framework, this system efficiently handles customer data, product/service entries, invoice generation, and payment tracking. The frontend uses HTML, CSS, and JavaScript for a responsive, user-friendly interface, while Jinja2 templating ensures dynamic rendering of data directly into HTML pages. SQLAlchemy is used as the ORM for managing the database in a scalable and secure manner.", time: "", github: "https://github.com/Next-Gen-Coder-2007/Billing-System-2", deployed_link: "https://billing-system-2-0kqm.onrender.com/", skills: ["HTML", "CSS", "JS", "FLASK", "Jinja2 Templating", "SQLALCHEMY"] }
 const modaldata3 = { img: "./assets/project-3.png", title: "Online Voting System using Flask", description: "The Online Voting System is a secure and user-friendly web application designed to digitize and automate the election process. Built with Flask as the backend framework and SQLAlchemy for database operations, this system allows users (voters) to log in, view available elections/candidates, and cast their vote online. Admins can manage users, candidates, and view election results in real-time. HTML, CSS, JavaScript, and Jinja2 templating are used for creating a responsive, dynamic front-end interface.", time: "", github: "https://github.com/Next-Gen-Coder-2007/Voting-System", deployed_link: "https://voting-system-1-3kbi.onrender.com/", skills: ["HTML", "CSS", "JS", "FLASK", "Jinja2 Templating", "SQLALCHEMY"] }
