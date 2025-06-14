@@ -520,6 +520,7 @@ body {
 .tech-playground h1 {
     font-size: 70px;
     color: white;
+    text-align: center;
 }
 
 .game-card {
@@ -763,7 +764,7 @@ video {
     align-items: center;
     flex-direction: column;
     padding: 40px 0;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .about h1{
@@ -853,4 +854,53 @@ video {
 .footer p {
   margin: 10px 0;
   font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+    .glow, .navbar, .left-line{
+        display: none;
+    }
+    .hero-section{
+        flex-direction: column;
+    }
+    .name{
+        margin: 0;
+        margin-top: -150px;
+    }
+    .photo{
+        margin-top: 200px;
+    }
+    .name h1 {
+        background: linear-gradient(90deg,
+                hsl(0, 100%, 50%),
+                hsl(30, 100%, 50%),
+                hsl(60, 100%, 50%),
+                hsl(90, 100%, 50%),
+                hsl(120, 100%, 50%),
+                hsl(150, 100%, 50%),
+                hsl(180, 100%, 50%),
+                hsl(210, 100%, 50%),
+                hsl(240, 100%, 50%),
+                hsl(270, 100%, 50%),
+                hsl(300, 100%, 50%),
+                hsl(330, 100%, 50%),
+                hsl(360, 100%, 50%));
+        background-size: 300% 100%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: smooth-rainbow 10s linear infinite;
+    }
+    .secti{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about-left{
+        width: 90%;
+    }
+    .about-right{
+        width: 90%;
+        padding: 0;
+    }
 }
