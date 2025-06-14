@@ -95,7 +95,7 @@ body {
 }
 
 .name {
-    width: 500px;
+    max-width: 500px;
     margin-right: 100px;
 }
 
@@ -856,7 +856,7 @@ video {
   font-size: 14px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1035px) {
     .glow, .navbar, .left-line{
         display: none;
     }
@@ -866,6 +866,7 @@ video {
     .name{
         margin: 0;
         margin-top: -150px;
+        text-align: center;
     }
     .photo{
         margin-top: 200px;
